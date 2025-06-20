@@ -1,11 +1,31 @@
 import React from "react";
 
 function App() {
-  return (
-    <div className="min-h-screen bg-gray-900 text-white p-8">
-      <h1 className="text-4xl font-bold text-center">Portfolio Test</h1>
-      <p className="text-center mt-4">Testing if React is working...</p>
-    </div>
+  return React.createElement(
+    "div",
+    { 
+      style: { 
+        minHeight: "100vh", 
+        backgroundColor: "#1f2937", 
+        color: "white", 
+        padding: "2rem",
+        fontFamily: "Arial, sans-serif"
+      } 
+    },
+    React.createElement("h1", { 
+      style: { 
+        fontSize: "3rem", 
+        fontWeight: "bold", 
+        textAlign: "center",
+        marginBottom: "1rem"
+      } 
+    }, "Portfolio Test"),
+    React.createElement("p", { 
+      style: { 
+        textAlign: "center", 
+        fontSize: "1.2rem"
+      } 
+    }, "Testing if React is working...")
   );
 }
 
