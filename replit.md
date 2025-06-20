@@ -98,6 +98,7 @@ This is a full-stack portfolio application for Bhuvan Bhaskar Deo, showcasing de
 ```
 Changelog:
 - June 20, 2025. Initial setup
+- June 20, 2025. Converted to JavaScript-only portfolio - removed all TypeScript files, simplified to frontend-only React application with Vite
 ```
 
 ## User Preferences
