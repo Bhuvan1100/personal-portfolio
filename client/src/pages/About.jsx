@@ -1,3 +1,5 @@
+import React from "react";
+
 function About() {
   const skills = [
     { name: "React", icon: "fab fa-react", color: "text-blue-400" },

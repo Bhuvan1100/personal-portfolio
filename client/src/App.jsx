@@ -1,31 +1,24 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
+import { ThemeProvider } from "./context/ThemeContext";
+import Layout from "./components/Layout";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Projects from "./pages/Projects";
+import Resume from "./pages/Resume";
 
 function App() {
-  return React.createElement(
-    "div",
-    { 
-      style: { 
-        minHeight: "100vh", 
-        backgroundColor: "#1f2937", 
-        color: "white", 
-        padding: "2rem",
-        fontFamily: "Arial, sans-serif"
-      } 
-    },
-    React.createElement("h1", { 
-      style: { 
-        fontSize: "3rem", 
-        fontWeight: "bold", 
-        textAlign: "center",
-        marginBottom: "1rem"
-      } 
-    }, "Portfolio Test"),
-    React.createElement("p", { 
-      style: { 
-        textAlign: "center", 
-        fontSize: "1.2rem"
-      } 
-    }, "Testing if React is working...")
+  return (
+    <ThemeProvider>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/resume" element={<Resume />} />
+        </Routes>
+      </Layout>
+    </ThemeProvider>
   );
 }
 

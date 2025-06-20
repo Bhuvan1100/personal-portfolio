@@ -1,3 +1,5 @@
+import React from "react";
+
 function Resume() {
   const downloadResume = () => {
     // TODO: Implement actual resume download functionality
