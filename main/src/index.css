@@ -1,0 +1,239 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(220, 26%, 14%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(220, 13%, 18%);
+  --muted-foreground: hsl(220, 9%, 46%);
+  --popover: hsl(220, 26%, 14%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(220, 23%, 18%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(220, 13%, 28%);
+  --input: hsl(220, 13%, 28%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(210, 40%, 98%);
+  --secondary: hsl(220, 13%, 18%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(220, 13%, 18%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(220, 9%, 46%);
+  --radius: 0.5rem;
+}
+
+.light {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(220, 26%, 14%);
+  --muted: hsl(220, 14%, 96%);
+  --muted-foreground: hsl(220, 9%, 46%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(220, 26%, 14%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(220, 26%, 14%);
+  --border: hsl(220, 13%, 91%);
+  --input: hsl(220, 13%, 91%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(210, 40%, 98%);
+  --secondary: hsl(220, 14%, 96%);
+  --secondary-foreground: hsl(220, 9%, 15%);
+  --accent: hsl(220, 14%, 96%);
+  --accent-foreground: hsl(220, 9%, 15%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(210, 40%, 98%);
+  --ring: hsl(220, 9%, 46%);
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    border-color: hsl(var(--border));
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Custom styles for portfolio */
+.portfolio-bg {
+  background-color: #1a202c;
+}
+
+.portfolio-secondary {
+  background-color: #2d3748;
+}
+
+.portfolio-accent {
+  background-color: #4a5568;
+}
+
+.portfolio-blue {
+  background-color: #4299e1;
+}
+
+.portfolio-text-secondary {
+  color: #a0aec0;
+}
+
+.light .portfolio-bg {
+  background-color: #ffffff;
+}
+
+.light .portfolio-secondary {
+  background-color: #f7fafc;
+}
+
+.light .portfolio-accent {
+  background-color: #e2e8f0;
+}
+
+.light .portfolio-text-secondary {
+  color: #4a5568;
+}
+
+/* Skill card animations */
+.skill-card {
+  background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+  border: 1px solid #4a5568;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(66, 153, 225, 0.15);
+  border-color: #4299e1;
+}
+
+.light .skill-card {
+  background: linear-gradient(135deg, #f7fafc 0%, #e2e8f0 100%);
+  border: 1px solid #e2e8f0;
+}
+
+.light .skill-card:hover {
+  border-color: #4299e1;
+}
+
+/* Achievement card */
+.achievement-card {
+  background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+  border: 1px solid #4a5568;
+  border-radius: 12px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.light .achievement-card {
+  background: linear-gradient(135deg, #f7fafc 0%, #e2e8f0 100%);
+  border: 1px solid #e2e8f0;
+}
+
+/* Timeline item */
+.timeline-item {
+  background: #2d3748;
+  border: 1px solid #4a5568;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+.timeline-item:hover {
+  border-color: #4299e1;
+  transform: translateX(4px);
+}
+
+.light .timeline-item {
+  background: #f7fafc;
+  border: 1px solid #e2e8f0;
+}
+
+.light .timeline-item:hover {
+  border-color: #4299e1;
+}
+
+/* Navigation styles */
+.nav-link {
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background-color: #4299e1;
+  color: white;
+}
+
+/* Button styles */
+.btn-primary {
+  background: linear-gradient(135deg, #4299e1 0%, #3182ce 100%);
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(66, 153, 225, 0.3);
+}
+
+/* Social link styles */
+.social-link {
+  transition: all 0.3s ease;
+  color: #a0aec0;
+}
+
+.social-link:hover {
+  color: #4299e1;
+  transform: translateY(-2px);
+}
+
+/* Construction animation */
+.construction-icon {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Smooth transitions */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
