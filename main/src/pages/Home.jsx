@@ -11,7 +11,7 @@ function Home() {
           <TypewriterEffect 
             text="Hello, I'm Bhuvan " 
             speed={100} 
-            className="text-white"
+            className="portfolio-text-secondary"
           />
         </h1>
 
