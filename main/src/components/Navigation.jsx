@@ -14,7 +14,7 @@ function Navigation() {
     <nav className="portfolio-secondary border-b border-gray-600 px-6 py-4">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
-        <div className="text-2xl font-bold text-blue-400">BD</div>
+        <div className="text-2xl font-bold text-blue-400">BBD</div>
         
         {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-1">
