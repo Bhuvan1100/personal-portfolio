@@ -3,7 +3,7 @@ import React from "react";
 function Resume() {
   const downloadResume = () => {
   const link = document.createElement('a');
-  link.href = '/_BhuvanCV (5).pdf';  // 🔥 fixed path
+  link.href = '/BhuvanCV (6).pdf';  // 🔥 fixed path
   link.download = 'Bhuvan_Bhaskar_Deo_Resume.pdf';
   link.click();
 };
