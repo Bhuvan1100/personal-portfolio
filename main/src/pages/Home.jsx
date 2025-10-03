@@ -11,12 +11,12 @@ function Home() {
           <TypewriterEffect 
             text="Hello, I'm Bhuvan" 
             speed={100} 
-            className="portfolio-text-secondary"
+            className="portfolio-text-secondary "
           />
         </h1>
 
         
-        <h2 className="text-4xl font-bold mb-8 text-blue-400">
+        <h2 className="text-4xl  font-bold mb-8 text-blue-400">
           <TypewriterEffect 
             text="Full Stack Developer & Problem Solver" 
             speed={50} 
