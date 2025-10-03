@@ -9,7 +9,7 @@ function Home() {
        
         <h1 className="text-6xl font-bold mb-4">
           <TypewriterEffect 
-            text="Hello, I'm Bhuvan Bhaskar Deo " 
+            text="Hello, I'm Bhuvan" 
             speed={100} 
             className="portfolio-text-secondary"
           />
