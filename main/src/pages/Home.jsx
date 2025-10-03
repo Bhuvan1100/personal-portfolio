@@ -10,7 +10,7 @@ function Home() {
         {/* Main Title */}
         <h1 className="text-5xl sm:text-6xl font-extrabold mb-6 leading-tight">
           <TypewriterEffect 
-            text="Hello, I'm Bhuvan" 
+            text="Hello, I'm Bhuvan Bhaskar Deo" 
             speed={90} 
             className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent"
           />
